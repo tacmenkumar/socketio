@@ -1,0 +1,14 @@
+{
+  "name": "sockets",
+  "version": "1.0.0",
+  "description": "Socket App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sockets"
+  ],
+  "author": "Niraj Kumar",
+  "license": "ISC"
+}
