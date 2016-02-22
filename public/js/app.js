@@ -1,6 +1,16 @@
 var socket = io();
-console.log(socket);
+socket.on('connect', function(data) {
+	console.log(data);
+	socket.emit('message', {
+		id: 1,
+		message: 'Message'
+	});
+});
 
-socket.on("connect", function(socket){
-	console.log("Connected to Socket.io Server!");
+socket.on('message', function(data) {
+	console.log("Message Received: " + data.message);
+	socket.emit('message', {
+		id: 2,
+		message: 'Message'
+	});
 });
